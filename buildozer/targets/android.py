@@ -554,7 +554,7 @@ class TargetAndroid(Target):
                 oldp4a= ''''https://github.com/kivy/python-for-android.git '''
                 cmd(
                     ('git clone -b {} --single-branch '
-                     'https://github.com/opacam/python-for-android.git@python-core-update '
+                     'https://github.com/opacam/python-for-android@python-core-update '
                      '{}').format(source, self.p4a_directory),
                     cwd=self.buildozer.platform_dir)
             elif self.platform_update:
