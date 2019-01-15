@@ -551,9 +551,10 @@ class TargetAndroid(Target):
                 raise BuildozerException()
         else:
             if not self.buildozer.file_exists(pa_dir):
+                oldp4a= ''''https://github.com/kivy/python-for-android.git '''
                 cmd(
                     ('git clone -b {} --single-branch '
-                     'https://github.com/kivy/python-for-android.git '
+                     'https://github.com/opacam/python-for-android.git@python-core-update '
                      '{}').format(source, self.p4a_directory),
                     cwd=self.buildozer.platform_dir)
             elif self.platform_update:
