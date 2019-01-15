@@ -14,10 +14,10 @@ if sys.platform == 'win32':
 from platform import uname
 WSL = 'Microsoft' in uname()[2]
 
-ANDROID_API = '19'
-ANDROID_MINAPI = '9'
+ANDROID_API = '26'
+ANDROID_MINAPI = '21'
 ANDROID_SDK_VERSION = '20'
-ANDROID_NDK_VERSION = '9c'
+ANDROID_NDK_VERSION = '17c'
 APACHE_ANT_VERSION = '1.9.4'
 
 import traceback
@@ -554,7 +554,7 @@ class TargetAndroid(Target):
                 oldp4a= ''''https://github.com/kivy/python-for-android.git '''
                 cmd(
                     ('git clone -b python-core-update --single-branch '
-                     'https://github.com/opacam/python-for-android '
+                     'https://github.com/ymongo/python-for-android '
                      '{}').format(self.p4a_directory),
                     cwd=self.buildozer.platform_dir)
             elif self.platform_update:
