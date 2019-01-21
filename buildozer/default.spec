@@ -85,7 +85,7 @@ fullscreen = 0
 #android.presplash_color = #FFFFFF
 
 # (list) Permissions
-#android.permissions = INTERNET
+android.permissions = INTERNET
 
 # (int) Android API to use
 #android.api = 26
@@ -186,7 +186,8 @@ fullscreen = 0
 #android.library_references =
 
 # (str) Android logcat filters to use
-android.logcat_filters = *:S python:D
+android.logcat_filters = *:S python
+#:D
 
 # (bool) Copy library instead of making a libpymodules.so
 #android.copy_libs = 1
@@ -232,7 +233,7 @@ android.arch = armeabi-v7a
 [buildozer]
 
 # (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
-log_level = 1
+log_level = 2
 
 # (int) Display warning if buildozer is run as root (0 = False, 1 = True)
 warn_on_root = 1
